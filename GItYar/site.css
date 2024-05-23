@@ -1,0 +1,98 @@
+@font-face {
+    font-family: 'B-Yekan';
+    src: local(\site\git-yar\GItYar\fonts\B_Yekan);
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+.nav-link{
+    font-family: 'B-Yekan';
+}
+.navbar-brand{
+    font-family: 'B-Yekan';
+}
+.landing{
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    z-index: -1;
+    background: #0056b3;
+
+}
+.home-wrap{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+.home-inner{
+ position: fixed;
+     top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #202348;
+    background-size: cover;
+    background-position: center center;
+}
+.caption{
+    width: 100%;
+    position: absolute;
+    top: 40%;
+    z-index: 1;
+    color: #ffffff;
+}
+.caption h1{
+font-family: 'B-Yekan' ;
+    font-size: 4rem;
+    font-weight: 700;
+    letter-spacing: 0.3rem;
+    text-shadow: 0.1rem 0.1rem 0.8rem #000000;
+    padding-bottom: 1rem;
+}
+. caption .btn-start{
+    font-family: 'B-Yekan';
+    font-size: 1.2rem;
+    border-width: 0.1rem;
+    border-radius: 0;
+    padding: 0.5rem 1rem;
+
+}
+.img {
+width: 40%;
+
+}
+.area{
+    margin: 0 auto;
+    padding: 4rem 2rem 1rem;
+    background: #ced4da;
+}
+.author .card{
+    border-radius: 15px;
+    box-shadow: 2px 2px 5px #0056b3;
+    margin: 3rem 0;
+}
+.author .card:hover{
+    background-color: #0056b3 ;
+}
+    .author .card:hover h3,
+    .author .card:hover p {
+          color: #ffffff;
+    }
+footer{
+    background-color: #202348;
+    color: #ffffff;
+}
+.btn{
+    background: #E3BC3B;
+    color: #000000;
+    padding: 0.3rem ;
+}
+
+
+
+
