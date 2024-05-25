@@ -1,16 +1,9 @@
-@font-face {
-    font-family: 'B-Yekan';
-    src: local(\site\git-yar\GItYar\fonts\B_Yekan);
-    font-weight: normal;
-    font-style: normal;
-}
 
-
-.nav-link{
-    font-family: 'B-Yekan';
+.nav-link {
+    font-family: 'IRANSans-web';
 }
 .navbar-brand{
-    font-family: 'B-Yekan';
+    font-family: 'IRANSans-web';
 }
 .landing{
     position: relative;
@@ -28,6 +21,12 @@
     left: 0;
     width: 100%;
     height: 100%;
+}
+video{
+    height: 35%;
+    width: 20%;
+
+
 }
 .home-inner{
  position: fixed;
@@ -47,7 +46,7 @@
     color: #ffffff;
 }
 .caption h1{
-font-family: 'B-Yekan' ;
+font-family: 'IRANSans-web' ;
     font-size: 4rem;
     font-weight: 700;
     letter-spacing: 0.3rem;
@@ -55,7 +54,7 @@ font-family: 'B-Yekan' ;
     padding-bottom: 1rem;
 }
 . caption .btn-start{
-    font-family: 'B-Yekan';
+    font-family: 'IRANSans-web';
     font-size: 1.2rem;
     border-width: 0.1rem;
     border-radius: 0;
@@ -72,8 +71,11 @@ width: 40%;
     background: #ced4da;
 }
 .author .card{
+    font-family: 'IRANSans-web' ;
     border-radius: 15px;
     box-shadow: 2px 2px 5px #0056b3;
+    display: flex;
+  justify-content: center;
     margin: 3rem 0;
 }
 .author .card:hover{
@@ -84,13 +86,16 @@ width: 40%;
           color: #ffffff;
     }
 footer{
+    font-family: 'IRANSans-web' ;
     background-color: #202348;
     color: #ffffff;
 }
 .btn{
+    font-family: 'IRANSans-web' ;
     background: #E3BC3B;
     color: #000000;
-    padding: 0.3rem ;
+    padding: 0.3rem 0.1rem ;
+
 }
 
 
