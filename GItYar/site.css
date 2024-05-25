@@ -87,8 +87,9 @@ width: 40%;
     }
 footer{
     font-family: 'IRANSans-web' ;
-    background-color: #202348;
     color: #ffffff;
+     background-color: #343a40;
+    border: solid 1px #000000;
 }
 .btn{
     font-family: 'IRANSans-web' ;
