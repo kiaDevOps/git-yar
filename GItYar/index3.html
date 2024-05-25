@@ -8,9 +8,164 @@
 <title>GitYarSite</title>
     <link rel="icon" href="H:\site\git-yar\GItYar\images\git.png" type="image\ico">
     <link rel="stylesheet" href="H:\site\git-yar\GItYar\css\bootstrap.min.css">
-    <link rel="stylesheet" href="site.css">
-    <link rel="stylesheet" href="Font/font.css"></head>
+    <link rel="stylesheet" href="git.css">
+    <link rel="stylesheet" href="Font/font.css">
+</head>
 <body dir="rtl">
+
+
+<nav class="navbar navbar-expand-lg navbar-dark  bg-dark fixed-top">
+  <div class="container-fluid">
+      <a href="#" class="navbar-brand" >
+      <img src="H:\site\git-yar\GItYar\images\git.png" class="rounded-circle" alt="گیت یار">
+      </a>
+    <a class="navbar-brand" href="index.html">سایت آموزش گیت یار</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="index.html">صفحه نخست</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link "  href="index3.html"> لینوکس</a>
+        </li> <li class="nav-item">
+          <a class="nav-link "  href="index2.html"> گیت</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+
+<img src="images/linux2.png" class="main-img" alt="">
+
+<div id="tozih" >
+    <div class="col-md-9 text-center area">
+        <div class="container text-center" >
+            <div class="row" >
+
+                   <div class="" >
+                       <H1>    پرکاربردترین دستورات لینوکس برای افراد مبتدی</H1>
+<p class="explain">
+با این که استفاده از دستورات برای انجام برخی از کارها در مقایسه با استفاده از رابط کاربری کمی پیچیده تر است اما زمانی که بتوانید با کاربرد و طرز استفاده از آنها آشنا شوید، کارهای خود را با سرعت بیشتری جلو خواهید برد. در واقع، داشتن مهارت در کار کردن با دستورات لینوکس، راه را برای پیشرفت در زمینه شغلی یا هر زمینه موردنیاز دیگر باز می کند.
+</p>
+                                              <H1>  پرکاربردترین دستورات لینوکس</H1>
+<p>
+کاربران با استفاده از دستورات لینوکس به راحتی از عهده انجام کارهای ساده و پیشرفته برمی آیند. کافی است دستورات لازم را یاد بگیرید و متناسب با نیاز خود، دستور موردنظر را در ترمینال لینوکس وارد کنید. منظور از ترمینال، همان خط فرمانی است که برای تعامل با سیستم استفاده می شود.
+</p>
+<h1>دستورات مدیریت فایل در لینوکس</h1>
+<p class="explain">
+1. pwd
+این دستور برای نمایش لوکیشن دایرکتوری فعلی استفاده می شود. منظور از لوکیشن همان مسیری است از دایرکتوری روت تا دایرکتوری فعلی وجود دارد.
+
+Syntax: pwd [option]
+
+نمایش مسیر منطقی
+
+pwd -L
+نمایش مسیر فیزیکی
+
+pwd -P
+نمایش ورژن pwd
+
+pwd -version
+    2. mkdir
+کاربر با استفاده از دستور mkdir دایرکتوری جدیدی را به مسیر موردنظر اضافه می کند. گزینه های متنوعی وجود دارد که با استفاده از آنها می توان ویژگی های مختلفی برای این دستور لحاظ کرد.
+
+Syntax: mkdir [options] [directories]
+
+ایجاد دایرکتوری جدید در مسیر فعلی
+
+mkdir mydirct_name
+ایجاد چند دایرکتوری به صورت همزمان در مسیر فعلی (بین کاما و اسم دایرکتوری نباید هیچ فاصله ای باشد)
+
+mkdir {dir1,dir2,dir3}
+ایجاد دایرکتوری به صورت تو در تو (از پدر به فرزند)
+
+mkdir –p first/second/third
+مجوز دادن به دایرکتوری جدید
+
+mkdir -m a=rwx [directory]
+نمایش اطلاعات مفید در مورد دستور mkdir
+
+mkdir –help
+
+    3.cd
+از این دستور برای پیمایش در بین فایل ها و دایرکتوری ها استفاده می شود. مسیر فعلی شما بستگی به دایرکتوری دارد که اکنون در داخل آن قرار دارید.
+
+به عنوان مثال اگر در مسیر /home/username/Documents قرار دارید و می خواهید به دایرکتوری Photos موجود در آن مسیر بروید، کافی است دستور cd Photos را وارد کنید.
+
+Syntax: cd [options] directories
+
+قرار گرفتن در لوکیشن موردنظر
+
+cd dir_1/dir_2/dir_3
+تغییر دایرکتوری فعلی به دایرکتوری ریشه (نقطه شروع هر مسیر)
+
+cd /
+تغییر دایرکتوری به دایرکتوری home
+
+cd یا ~ cd
+انتقال به دایرکتوری parent
+
+cd ..
+انتقال به دایرکتوری قبلی که کاربر اخیراً در آنجا حضور داشت.
+
+cd -
+4. ls
+این دستور برای نمایش لیستی از محتویات دایرکتوری موردنظر استفاده می شود. کاربر با تایپ ls در ترمینال، لیست فایل ها و دایرکتوری های تو در تو را مشاهده می کند.
+
+Syntax: ls [options] [directory]
+
+نمایش لیست محتویات موجود در مسیر موردنظر
+
+ls path
+نمایش محتویات دایرکتوری پدر دایرکتوری فعلی
+
+ls ..
+نمایش لیست دایرکتوری ها به همراه زیر دایرکتوری ها
+
+ls *
+نمایش لیست محتویات دایرکتوری به همراه نام فایل یا دایرکتوری، مجوز، تعداد لینک ها، اندازه محتوا و …
+
+ls –l
+5. rmdir
+دستور rmdir برای حذف دایرکتوری استفاده می شود. البته، به این نکته نیز توجه داشته باشید که با این دستور فقط می توانید دایرکتوری های خالی را حذف کنید. اگر دایرکتوری موردنظر خالی نباشد، یک پیام خطا دریافت خواهید کرد.
+
+Syntax: rmdir [-p] [-v | –verbose] [–ignore-fail-on-non-empty] directories
+
+با p، آرگومان های موجود در بخش دایرکتوری به عنوان مسیر در نظر گرفته می شوند و در صورت خالی بودن به ترتیب (از اول تا آخر) حذف می شوند.
+
+rmdir –p
+با استفاده از گزینه v، اطلاعات مربوط به هر دایرکتوری در حال پردازش، نمایش داده می شود.
+
+rmdir -v, –verbose
+اگر تمایلی به مشاهده پیام خطای مربوط به خالی نبودن دایرکتوری ندارید، می توانید گزینه زیر را استفاده کنید.
+
+rmdir –ignore-fail-on-non-empty
+
+</p>
+                   </div>
+                </div>
+        </div>
+    </div>
+</div>
+
+<footer>
+    <div class="row justify-content-center">
+        <div class="col-md-5 text-center">
+
+            <p >
+                ارائئه دهندگان : محمد جواد بیاتانی، امیر حسین صفری ، کیارش برمرزپورناک
+
+            </p>
+
+
+        </div>
+    </div>
+</footer>
 
 </body>
 </html>
