@@ -1,0 +1,101 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+<title>GitYarSite</title>
+    <link rel="icon" href="H:\site\git-yar\GItYar\images\git.png" type="image\ico">
+    <link rel="stylesheet" href="H:\site\git-yar\GItYar\css\bootstrap.min.css">
+    <link rel="stylesheet" href="git.css">
+    <link rel="stylesheet" href="Font/font.css">
+</head>
+<body dir="rtl">
+
+
+<nav class="navbar navbar-expand-lg navbar-dark  bg-dark fixed-top">
+  <div class="container-fluid">
+      <a href="#" class="navbar-brand" >
+      <img src="H:\site\git-yar\GItYar\images\git.png" class="rounded-circle" alt="گیت یار">
+      </a>
+    <a class="navbar-brand" href="#">سایت آموزش گیت یار</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="index.html">صفحه نخست</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link " aria-current="page" href="#"> لینوکس</a>
+        </li> <li class="nav-item">
+          <a class="nav-link " aria-current="page" href="#"> گیت</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+
+<img src="images/git3.jpeg" class="main-img" alt="">
+
+<div id="tozih" >
+    <div class="col-md-9 text-center area">
+        <div class="container text-center" >
+            <div class="row" >
+
+                   <div class="" >
+                       <H1>commit</H1>
+<p class="explain">
+Git commit
+دستور git commit، تغییرهای stage شده ی پروژه را ذخیره می کند. این تغییرهای ذخیره شده را می توان مانند نسخه های امن یک پروژه تصور کرد. Git هیچ گاه آن ها را تغییر نمی دهد، مگر به طور صریح بخواهید که این کار را انجام دهد. قبل از اجرای git commit، از دستور git add استفاده می شود. این دستور تغییرهای پروژه را که قرار است در یک commit ذخیره شوند، stage می کند. این دو دستور (git add و git commit)، بیشترین کاربرد را در Git دارند.
+</p>
+                                              <H1>Git commit چگونه کار می کند؟</H1>
+<p>
+
+   Git commit چگونه کار می کند؟
+در سطح بالا، می توان Git را به عنوان یک ابزار مدیریت جدول زمانی در نظر گرفت. commit ها واحدهای اصلی سازنده ی یک جدول زمانی پروژه Git هستند. commit ها را می توان به عنوان ثبت های لحظه ای یا نقاط عطف در طول جدول زمانی یک پروژه ی Git، در نظر گرفت. commit ها با دستور git commit ایجاد می شوند تا وضعیت یک پروژه را در آن زمان مشخص کنند. این commit ها همیشه به مخزن محلی سپرده می شوند و تا زمانی که آماده نشوید، Git شما را مجبور نمی کند با مخزن مرکزی تعامل کنید؛ بر خلاف SVN که در آن commit ها به مخزن مرکزی سپرده می شوند. همان طور که ناحیه ی staging، یک سپر، میان مسیر کاری و تاریخچه ی پروژه است؛ مخزن محلی هر توسعه دهنده، یک سپر بین فعالیت های او و مخزن مرکزی است.
+</p>
+
+<p class="explain">
+                           گزینه های رایج
+git commit
+دستور بالا، یک stage ثبت شده را commit می کند. با این دستور یک ویرایش گر متن راه اندازی می شود و شما را به ایجاد یک پیام commit ترغیب می کند. پس از ورود پیام، فایل را ذخیره کرده و ویرایش گر را ببندید تا commit واقعی ایجاد شود.
+
+git commit -a<br>
+دستور بالا، همه ی تغییرهایی که در مسیر کاری هست را commit می کند. این فقط شامل تغییرهایی است که در فایل های ردیابی شده هستند (آن هایی که با دستور git add، اضافه شده اند).
+
+git commit -m "commit message"<br>
+دستور بالا، یک دستور میان بر است که بلافاصله یک commit به همراه یک پیام ایجاد می کند. به صورت پیش فرض، git commit یک ویرایش گر محلی پیکربندی شده را باز می کند و برای ورود یک پیام commit درخواست می دهد. وارد کردن گزینه ی -m مانع باز کردن ویرایش گر متن می شود و به جای آن یک پیام برخط را می پذیرد.
+
+git commit -am "commit message"<br>
+دستور بالا، یک دستور میان بر است که قدرتمند که گزینه های -a و -m را با هم ترکیب می کند. این ترکیب بدون درنگ یک commit از تمامی تغییرهای stage شده ایجاد می کند و یک پیام commit برخط می گیرد.
+
+git commit --amend<br>
+دستور بالا، سطح دیگری از عملکرد را به دستور commit اضافه می کند. اجرای این گزینه آخرین commit را اصلاح می کند. به جای ایجاد commit جدید، تغییرهای stage شده به commit قبلی اضافه می شوند. این دستور، ویرایش گر متن پیکربندی شده ی سیستم را باز کرده و شما را ترغیب به تغییر پیام commit قبلی می کند.
+
+</p>
+                   </div>
+                </div>
+        </div>
+    </div>
+</div>
+
+<footer>
+    <div class="row justify-content-center">
+        <div class="col-md-5 text-center">
+
+            <p >
+                ارائئه دهندگان : محمد جواد بیاتانی، امیر حسین صفری ، کیارش برمرزپورناک
+
+            </p>
+
+
+        </div>
+    </div>
+</footer>
+
+</body>
+</html>

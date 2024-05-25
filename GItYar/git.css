@@ -1,0 +1,61 @@
+body {
+    background: #202348;
+    color: #ffffff;
+
+}
+.nav-link {
+    font-family: 'IRANSans-web';
+
+}
+.main-img{
+
+    position: relative;
+    margin-top: 30px;
+    width: 100%;
+}
+.navbar-brand{
+    font-family: 'IRANSans-web';}
+.area{
+
+}
+footer{
+    font-family: 'IRANSans-web' ;
+    background-color: #202348;
+    color: #ffffff;
+    border: solid 1px #000000;
+    margin-left: 30px;
+    margin-right: 30px;
+    border-radius: 15px;
+    box-shadow: 2px 2px 5px #000000;
+    margin-top: 74%;
+}
+#tozih{
+     position: relative;
+    top: 100px;
+    margin-left: 30%;
+right: 30px;
+  padding: 2px 3px 4px;
+
+    border: solid 1px;
+    border-radius: 25px;
+    box-shadow: 2px 2px 5px #000000;
+}
+h1{
+    text-align: right;
+}
+.explain{
+    font-size: large;
+text-align: right;
+letter-spacing: 0.1rem;
+    word-spacing: 0.2rem;
+    white-space: pre-line;
+}
+.cadr{
+    border: solid #ffffff;
+        display: flex;
+
+}
+
+
+
+
